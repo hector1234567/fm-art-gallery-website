@@ -1,5 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Outfit:wght@100..900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit";
+  background-color: white;
+  color: #444444;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  font-weight: 300;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(90deg, #151515 50%, #FFFFFF 50%);
+}
+.header__container {
+  width: 100%;
+  max-width: 111rem;
+  min-height: 100vh;
+  background-image: url(/assets/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 28.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 19rem;
+}
+.header__heading {
+  font-family: "Big Shoulders Display";
+  max-width: 51.4rem;
+  font-size: 9.6rem;
+  line-height: 8.8rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: transparent;
+  background-image: linear-gradient(90deg, #FFFFFF 28.5rem, #151515 28.5rem);
+  background-clip: text;
+}
+.header__text {
+  width: 100%;
+  max-width: 35rem;
+  margin-bottom: 6.4rem;
+}
+
+.button:link, .button:visited {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 26rem;
+  height: 7.2rem;
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.364rem;
+  padding: 0 2.4rem 0 3.2rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display";
+  background-color: #D5966C;
+  background-image: linear-gradient(90deg, #151515 20.4rem, transparent 20.4rem);
+  background-size: 40.8rem;
+  transition: background-position 0.3s ease-out;
+}
+.button:hover {
+  background-position: 20.4rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
