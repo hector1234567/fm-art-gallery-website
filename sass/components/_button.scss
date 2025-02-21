@@ -1,28 +1,49 @@
 .button {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 26rem;
+    height: 7.2rem;
+    color: $White;
+    font-size: 2rem;
+    font-weight: $Extra-Bold;
+    letter-spacing: 0.364rem;
+    padding: 0 2.4rem 0 3.2rem;
+    text-transform: uppercase;
+    font-family: $Font-Heading;
+
+    background-color: $Primary;
+    background-image: linear-gradient(
+      90deg,
+      $Black 20.4rem,
+      transparent 20.4rem
+    );
+    background-size: 40.8rem;
+
+    transition: background-position 0.3s ease-out;
+  }
+
+  &:hover {
+    background-position: 20.4rem 0;
+  }
+
+  &--left {
     &:link,
     &:visited {
-        text-decoration: none;
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 26rem;
-        height: 7.2rem;
-        color: $White;
-        font-size: 2rem;
-        font-weight: $Extra-Bold;
-        letter-spacing: .364rem;
-        padding: 0 2.4rem 0 3.2rem;
-        text-transform: uppercase;
-        font-family: $Font-Heading;
-
-        background-color: $Primary;
-        background-image: linear-gradient(90deg, $Black 20.4rem, transparent 20.4rem);
-        background-size: 40.8rem;
-
-        transition: background-position .3s ease-out;
+      background-image: linear-gradient(
+        270deg,
+        $Black 20.4rem,
+        transparent 20.4rem
+      );
+      background-position: 26rem 0;
+      padding: 0 3.2rem 0 2.4rem;
     }
 
     &:hover {
-        background-position: 20.4rem 0;
+      background-position: 6rem 0;
     }
+  }
 }

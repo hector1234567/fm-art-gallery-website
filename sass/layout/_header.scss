@@ -1,39 +1,43 @@
 .header {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(90deg, $Black 50%, $White 50%);
+  margin-bottom: 18rem;
+
+  &__container {
+    @include container;
+
+    min-height: 100vh;
+    background-image: url(/assets/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 28.5rem 0;
     display: flex;
-    justify-content: center;
-    background-image: linear-gradient(90deg, $Black 50%, $White 50%);
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 19rem;
 
-    &__container {
-        @include container;
-
-        min-height: 100vh;
-        background-image: url(/assets/desktop/image-hero.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 28.5rem 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding-top: 19rem;
-
+    @media (min-resolution: 2x) {
+      background-image: url(/assets/desktop/image-hero@2x.jpg);
     }
+  }
 
-    &__heading {
-        font-family: $Font-Heading;
-        max-width: 51.4rem;
-        font-size: 9.6rem;
-        line-height: 8.8rem;
-        text-transform: uppercase;
-        font-weight: $Extra-Bold;
-        color: transparent;
+  &__heading {
+    font-family: $Font-Heading;
+    max-width: 51.4rem;
+    font-size: 9.6rem;
+    line-height: 8.8rem;
+    text-transform: uppercase;
+    font-weight: $Extra-Bold;
+    color: transparent;
 
-        background-image: linear-gradient(90deg, $White 28.5rem, $Black 28.5rem);
-        background-clip: text;
-    }
+    background-image: linear-gradient(90deg, $White 28.5rem, $Black 28.5rem);
+    background-clip: text;
+  }
 
-    &__text {
-        width: 100%;
-        max-width: 35rem;
-        margin-bottom: 6.4rem;
-    }
+  &__text {
+    width: 100%;
+    max-width: 35rem;
+    margin-bottom: 6.4rem;
+  }
 }

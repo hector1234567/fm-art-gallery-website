@@ -1,0 +1,40 @@
+.location {
+    background-color: $Black;
+    color: $White;
+    display: flex;
+    justify-content: center;
+    padding: 10.4rem 2rem;
+
+    &__container {
+        @include container;
+
+        display: flex;
+        align-items: flex-start;
+        gap: 22rem;
+    }
+
+    &__heading {
+        font-family: $Font-Heading;
+        font-size: 7rem;
+        font-weight: $Extra-Bold;
+        line-height: 7rem;
+        width: 35rem;
+        text-transform: uppercase;
+        flex-shrink: 0;
+    }
+
+    &__street {
+        display: inline-block;
+        font-family: $Font-Heading;
+        font-size: 3.6rem;
+        line-height: 3.6rem;
+        font-weight: $Extra-Bold;
+        text-transform: uppercase;
+        color: $Primary;
+        margin-bottom: 2.4rem;
+    }
+
+    &__text {
+        margin-bottom: 3.2rem;
+    }
+}

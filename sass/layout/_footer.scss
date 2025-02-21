@@ -1,0 +1,72 @@
+.footer {
+  padding: 8rem 2rem;
+  display: flex;
+  justify-content: center;
+  background-color: $Black;
+  color: $White;
+
+  &__container {
+    @include container;
+
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__logo img {
+    width: 16rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    max-width: 43rem;
+    margin-left: 14rem;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: auto;
+
+    a {
+      &:link,
+      &:visited {
+        svg {
+          fill: white;
+          width: 2rem;
+          height: 2rem;
+
+          transition: all 0.2s ease;
+        }
+      }
+      &:hover {
+        svg {
+          fill: $Primary;
+        }
+      }
+    }
+  }
+
+  &--location {
+    background-color: $Primary;
+    color: $Black;
+
+    .footer__social {
+
+      a {
+        &:link,
+        &:visited {
+          svg {
+            fill: $Black;
+          }
+        }
+        &:hover {
+          svg {
+            fill: $White;
+          }
+        }
+      }
+    }
+  }
+}

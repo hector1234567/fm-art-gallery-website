@@ -1,0 +1,17 @@
+.map {
+  height: 60rem;
+  background-image: url(/assets/desktop/image-map.png);
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+
+  @media (min-resolution: 2x) or (min-width: 1540px) {
+    background-image: url(/assets/desktop/image-map@2x.png);
+  }
+
+  &__container {
+    @include container;
+  }
+}
