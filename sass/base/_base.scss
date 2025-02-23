@@ -8,6 +8,10 @@
 
 html {
   font-size: 62.5%;
+
+  @media (max-width: 975px) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -17,10 +21,19 @@ body {
   font-size: 2.2rem;
   line-height: 3.2rem;
   font-weight: $Light;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 main {
   display: flex;
   justify-content: center;
   margin-bottom: 18rem;
+
+  @media (max-width: 768px) {
+    margin-bottom: 120px;
+  }
 }

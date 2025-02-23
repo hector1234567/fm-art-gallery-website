@@ -10,6 +10,11 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 975px) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "Outfit";
@@ -19,11 +24,22 @@ body {
   line-height: 3.2rem;
   font-weight: 300;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
 
 main {
   display: flex;
   justify-content: center;
   margin-bottom: 18rem;
+}
+@media (max-width: 768px) {
+  main {
+    margin-bottom: 120px;
+  }
 }
 
 .header {
@@ -31,6 +47,11 @@ main {
   justify-content: center;
   background-image: linear-gradient(90deg, #151515 50%, #FFFFFF 50%);
   margin-bottom: 18rem;
+}
+@media (max-width: 768px) {
+  .header {
+    margin-bottom: 120px;
+  }
 }
 .header__container {
   width: 100%;
@@ -44,10 +65,22 @@ main {
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 19rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 @media (min-resolution: 2x) {
   .header__container {
     background-image: url(/assets/desktop/image-hero@2x.jpg);
+  }
+}
+@media (max-width: 768px) {
+  .header__container {
+    flex-direction: column;
+    align-items: flex-end;
+    background-position: 0 0;
+    margin-left: 0;
+    margin-right: 40px;
+    justify-content: center;
   }
 }
 .header__heading {
@@ -61,10 +94,28 @@ main {
   background-image: linear-gradient(90deg, #FFFFFF 28.5rem, #151515 28.5rem);
   background-clip: text;
 }
+@media (max-width: 768px) {
+  .header__heading {
+    background-image: none;
+    background-clip: unset;
+    color: #151515;
+    font-size: 70px;
+    margin-bottom: 48px;
+    width: 339px;
+  }
+}
 .header__text {
   width: 100%;
   max-width: 35rem;
   margin-bottom: 6.4rem;
+}
+@media (max-width: 768px) {
+  .header__text {
+    font-size: 18px;
+    line-height: 28px;
+    width: 339px;
+    max-width: unset;
+  }
 }
 
 .gallery {
@@ -74,6 +125,16 @@ main {
   grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: 40rem 31.3rem 37.7rem;
   gap: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-rows: 400px 313px 396px;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 11px;
+  }
 }
 .gallery__content {
   padding-top: 6rem;
@@ -86,6 +147,17 @@ main {
 .gallery__content--dark .gallery__heading {
   color: #FFFFFF;
 }
+@media (max-width: 768px) {
+  .gallery__content--dark {
+    padding-left: 29px;
+    padding-right: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .gallery__content {
+    padding-top: 36px;
+  }
+}
 .gallery__heading {
   font-family: "Big Shoulders Display";
   font-size: 6rem;
@@ -95,6 +167,14 @@ main {
   text-transform: uppercase;
   max-width: 35rem;
   margin-bottom: 3.2rem;
+}
+@media (max-width: 768px) {
+  .gallery__heading {
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 24px;
+    max-width: 223px;
+  }
 }
 .gallery__text {
   max-width: 35rem;
@@ -155,6 +235,13 @@ main {
   max-width: 43rem;
   margin-left: 14rem;
 }
+@media (max-width: 768px) {
+  .footer__text {
+    margin-left: 65px;
+    max-width: 281px;
+    margin-right: 40px;
+  }
+}
 .footer__social {
   display: flex;
   align-items: center;
@@ -163,8 +250,8 @@ main {
 }
 .footer__social a:link svg, .footer__social a:visited svg {
   fill: white;
-  width: 2rem;
-  height: 2rem;
+  width: 20px;
+  height: 20px;
   transition: all 0.2s ease;
 }
 .footer__social a:hover svg {
@@ -189,6 +276,12 @@ main {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .map {
+    padding-left: 39px;
+    height: 600px;
+  }
+}
 @media (min-resolution: 2x) or (min-width: 1540px) {
   .map {
     background-image: url(/assets/desktop/image-map@2x.png);
@@ -206,12 +299,22 @@ main {
   justify-content: center;
   padding: 10.4rem 2rem;
 }
+@media (max-width: 768px) {
+  .location {
+    padding: 88px 39px 70px 39px;
+  }
+}
 .location__container {
   width: 100%;
   max-width: 111rem;
   display: flex;
   align-items: flex-start;
   gap: 22rem;
+}
+@media (max-width: 768px) {
+  .location__container {
+    gap: 68px;
+  }
 }
 .location__heading {
   font-family: "Big Shoulders Display";

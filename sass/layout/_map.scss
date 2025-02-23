@@ -7,6 +7,11 @@
   display: flex;
   justify-content: center;
 
+  @media (max-width: 768px) {
+    padding-left: 39px;
+    height: 600px;
+  }
+
   @media (min-resolution: 2x) or (min-width: 1540px) {
     background-image: url(/assets/desktop/image-map@2x.png);
   }

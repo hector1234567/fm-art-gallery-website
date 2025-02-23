@@ -21,6 +21,12 @@
     line-height: 2.8rem;
     max-width: 43rem;
     margin-left: 14rem;
+
+    @media (max-width: 768px) {
+      margin-left: 65px;
+      max-width: 281px;
+      margin-right: 40px;
+    }
   }
 
   &__social {
@@ -34,8 +40,8 @@
       &:visited {
         svg {
           fill: white;
-          width: 2rem;
-          height: 2rem;
+          width: 20px;
+          height: 20px;
 
           transition: all 0.2s ease;
         }
@@ -53,7 +59,6 @@
     color: $Black;
 
     .footer__social {
-
       a {
         &:link,
         &:visited {

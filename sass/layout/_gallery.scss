@@ -5,6 +5,15 @@
   grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: 40rem 31.3rem 37.7rem;
   gap: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-rows: 400px 313px 396px;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 11px;
+  }
 
   &__content {
     padding-top: 6rem;
@@ -17,6 +26,15 @@
       .gallery__heading {
         color: $White;
       }
+
+      @media (max-width: 768px) {
+        padding-left: 29px;
+        padding-right: 28px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 36px;
     }
   }
 
@@ -29,6 +47,13 @@
     text-transform: uppercase;
     max-width: 35rem;
     margin-bottom: 3.2rem;
+
+    @media (max-width: 768px) {
+      font-size: 50px;
+      line-height: 45px;
+      margin-bottom: 24px;
+      max-width: 223px;
+    }
   }
 
   &__text {
