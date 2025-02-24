@@ -80,6 +80,11 @@ main {
     background-image: url(/assets/desktop/image-hero@2x.jpg);
   }
 }
+@media (min-height: 800px) {
+  .header__container {
+    background-image: url(/assets/desktop/image-hero@2x.jpg);
+  }
+}
 @media (max-width: 768px) {
   .header__container {
     flex-direction: column;

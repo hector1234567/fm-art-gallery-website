@@ -34,6 +34,10 @@
       background-image: url(/assets/desktop/image-hero@2x.jpg);
     }
 
+    @media (min-height: 800px) {
+      background-image: url(/assets/desktop/image-hero@2x.jpg);
+    }
+
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: flex-end;
