@@ -17,7 +17,8 @@
   &__container {
     @include container;
 
-    min-height: 100vh;
+    // min-height: 100vh;
+    height: 80rem;
     background-image: url(/assets/desktop/image-hero.jpg);
     background-repeat: no-repeat;
     background-size: contain;

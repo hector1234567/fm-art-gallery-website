@@ -63,7 +63,7 @@ main {
 .header__container {
   width: 100%;
   max-width: 111rem;
-  min-height: 100vh;
+  height: 80rem;
   background-image: url(/assets/desktop/image-hero.jpg);
   background-repeat: no-repeat;
   background-size: contain;
