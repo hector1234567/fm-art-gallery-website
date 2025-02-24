@@ -7,13 +7,28 @@
   display: flex;
   justify-content: center;
 
+  @media (min-resolution: 2x) or (min-width: 1540px) {
+    background-image: url(/assets/desktop/image-map@2x.png);
+  }
+
   @media (max-width: 768px) {
     padding-left: 39px;
     height: 600px;
+    background-image: url(/assets/tablet/image-map.png);
+
+    @media (min-resolution: 2x) or (min-width: 1540px) {
+      background-image: url(/assets/tablet/image-map@2x.png);
+    }
   }
 
-  @media (min-resolution: 2x) or (min-width: 1540px) {
-    background-image: url(/assets/desktop/image-map@2x.png);
+  @media (max-width: 650px) {
+    padding-left: 0;
+    height: 550px;
+    background-image: url(/assets/mobile/image-map.png);
+
+    @media (min-resolution: 2x) or (min-width: 1540px) {
+      background-image: url(/assets/mobile/image-map@2x.png);
+    }
   }
 
   &__container {
